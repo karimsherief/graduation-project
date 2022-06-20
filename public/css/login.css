@@ -1,0 +1,83 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login_form {
+    width: fit-content;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    grid-gap: 10px;
+    width: fit-content;
+    text-align: center;
+}
+
+.logo {
+    width: 140px;
+}
+
+
+input[name="password"] + div {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 100px;
+}
+
+input:not([type="checkbox"]) {
+    width: 250px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-radius: 0;
+}
+
+button {
+    border-radius: 50px;
+    padding: 10px;
+    width: 150px;
+    background-color: var(--button2);
+    transition: 0.3s ease;
+    color: white;
+    border: 0;
+}
+
+label {
+    color: white;
+}
+
+a {
+    transition: 0.3s ease;
+    color: var(--button2);
+}
+a:hover {
+    color: #b91212 !important;
+}
+
+button:hover {
+    background-color: rgb(236, 82, 82);
+    transform: scale(1.1,1.1);
+}
+
+.back {
+    width: fit-content;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+.back i {
+    font-size: 40px;
+}

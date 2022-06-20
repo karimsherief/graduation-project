@@ -1,0 +1,75 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <section class="patientsGUI">
+            <div class="back">
+                <a href="/main"><i class="fa-solid fa-angle-left" style="color: white;"></i></a>
+            </div>
+            <div class="container">
+                <main>
+
+                    <ul class="tab-group">
+                        <li class="tab active"><a href="#predect">Application</a></li>
+                        <li class="tab"><a href="#result" class="result">Results form</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="predect">
+                            <h1>Breast cancer Prediction</h1>
+
+                            <div class="card-group">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Current image</h5>
+                                    </div>
+                                    <img src="/images/download.png" class="card-img-top" id="output">
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Prediction</h5>
+                                    </div>
+                                    <img src="/images/download.png" class="card-img-top" id="prediction">
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <button id="upload-btn">Upload image</button>
+                                <input type='file' id="getFile" style="display:none" onchange="readURL(this)">
+                                <button onclick="PGUI()">Predict</button>
+                                <button onclick="reset()">Reset</button>
+                            </div>
+
+                        </div>
+
+                        <div id="result" style="display: none;">
+                            <h1>Send results</h1>
+
+                            <form action="/Prediction" method="POST">
+                                <input type="text" placeholder="Name" name="name" required>
+                                <input type="number" placeholder="Phone" name="phone" required>
+                                <input type="text" placeholder="Email" name="email">
+                                <input type="text" placeholder="Result" name="result" style="cursor: not-allowed;"
+                                    required>
+                                <select name="doctoremail">
+                                    <% if(Doctors.length> 0) { %>
+                                        <% Doctors.forEach(doc=>{ %>
+                                            <option value=<%=doc.email%>>
+                                                <%= doc.name %>
+                                            </option>
+                                            <% }) %>
+                                                <% } %>
+                                </select>
+                                <button type="submit">Submit</button>
+                            </form>
+
+                        </div>
+
+                    </div><!-- tab-content -->
+
+                </div> <!-- /form -->
+            </div>
+        </section>
+        <script src="/js/GUI.js"></script>
+    </body>
+
+</html>

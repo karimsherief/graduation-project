@@ -1,0 +1,10 @@
+.not-found {
+    color:white ;
+    padding: 20px;
+}
+a {
+    background-color: var(--button2);
+    padding: 10px;
+    border-radius: 100px;
+    margin-left: 20px;
+}

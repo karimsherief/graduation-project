@@ -1,0 +1,28 @@
+<html lang="en">
+    <%- include('./partials/head.ejs')%>
+<body>
+    <section class="Sign-Up-Form">
+        <div class="container">
+            <form action="/Account/signUp" method="POST">
+                <div class="logo" style="width: 150px;height: 120px;">
+                    <img src="/images/pngwing.com.png" alt="logo">
+                  </div>
+                <h1>Sign Up</h1>
+                <p>Have An Account ? <a href="/Account/login">Login here</a></p>
+                <div class="form__message form__message--error"><%= message %></div>
+                <input type="text" placeholder="Full Name" name="name" required>
+                <div class="error-message"></div>
+                <input type="text" placeholder="E-Mail" name="email" required>
+                <div class="error-message"></div>
+                <input type="number" placeholder="National ID" name="natId" required> 
+                <div class="error-message"></div>
+                <input type="password" placeholder="Password" name="password" required>
+                <div class="error-message"></div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <script src="/js/signup.js"></script>
+</body>
+
+</html>

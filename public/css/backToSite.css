@@ -1,0 +1,18 @@
+.backtosite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+a {
+    background-color: var(--button2);
+    padding: 20px;
+    border-radius: 100px;
+}

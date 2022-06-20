@@ -1,0 +1,136 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* GUI */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #cacaca;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+main ul li a {
+    font-size: 20px;
+    background-color: var(--button2);
+    padding: 10px 50px;
+}
+
+main ul li.active a,
+main ul li a:hover {
+    background-color: #932c37;
+}
+
+.card-title {
+    color: var(--mainColor);
+}
+
+.btns {
+    justify-content: center;
+}
+
+/* Patient form */
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+
+}
+
+select {
+    padding: 10px 20px;
+    border-radius: 100px;
+    outline: none;
+    border: 0;
+}
+
+
+.back {
+    width: fit-content;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+.back i {
+    font-size: 40px;
+}
+
+
+.card-group {
+    display: flex;
+    height: 320px;
+    justify-content: center;
+}
+
+.card-group .card {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    height: 320px;
+
+}
+
+.card-group img {
+    height: 80%;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+button {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0b54c3;
+}
+
+button:first-child {
+    background-color: #ff96a7;
+}
+
+button:last-child {
+    background-color: #cc3333;
+}
+
+button:last-child:hover {
+    background-color: #db4c5a;
+}
+
+button:first-child:hover {
+    background-color: #ed718b;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <%- include('./partials/nav.ejs') %>
+            <section class="GUI">
+                <div class="container">
+                    <div class="info">
+                        <h1>Breast cancer detection & classification</h1>
+                    </div>
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Current image</h5>
+                            </div>
+                            <img src="/images/download.png" class="card-img-top" id="output">
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Prediction</h5>
+                            </div>
+                            <img src="/images/download.png" class="card-img-top" id="prediction">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button id="upload-btn">Upload image</button>
+                        <input type='file' id="getFile" style="display:none" onchange="readURL(this)">
+                        <button onclick="GUI()">Predict</button>
+                        <button onclick="reset()">Reset</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Status</th>
+                                <th scope="col">classification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <script src="/js/GUI.js"></script>
+    </body>
+</html>

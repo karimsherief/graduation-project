@@ -1,0 +1,35 @@
+<header>
+    <div class="container">
+        <div>
+            <div class="logo">
+                <img src="/images/pngwing.com.png">
+            </div>
+            <h1 class="title">
+                <%= title !="Account settings" && title !="Patients data" ? "" : title %>
+            </h1>
+        </div>
+        <div class="menu" onmouseover="document.querySelector('section').style.margin = '250px 0 10px'"
+            onmouseleave="document.querySelector('section').style.margin = '10px 0'">
+            <div class="icons">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="/doctor/<%= doctor._id %>/Prediction">Application</a></li>
+                <li><a href="/doctor/<%= doctor._id %>/Accountsettings">Account settings</a></li>
+                <li><a href="/doctor/<%= doctor._id %>/Patientsdata">Patients data</a></li>
+                <li><a href="/Account/Login">Logout</a></li>
+            </ul>
+        </div>
+        <ul class="normalList">
+            <li class=<%=title !="Account settings" && title !="Patients data" ? "active" : "" %>><a
+                    href="/doctor/<%= doctor._id %>/Prediction">Application</a></li>
+            <li class=<%=title=="Account settings" ? "active" : "" %>><a
+                    href="/doctor/<%= doctor._id %>/Accountsettings">Account settings</a></li>
+            <li class=<%=title=="Patients data" ? "active" : "" %>><a
+                    href="/doctor/<%= doctor._id %>/Patientsdata">Patients data</a></li>
+            <li><a href="/Account/Login">Logout</a></li>
+        </ul>
+    </div>
+</header> 

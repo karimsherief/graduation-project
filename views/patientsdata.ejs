@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+  <body>
+
+    <%- include('./partials/nav.ejs') %>
+
+      <section class="patientsData">
+        <div class="container">
+          <div class="search">
+            <button class="print"><i class="fas fa-print"></i></button>
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div id="dvContents">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% if(patients.length> 0) { %>
+                  <% patients.forEach(patient=> { %>
+                    <% if(patient.doctoremail.toLowerCase()==doctor.email.toLowerCase()) {%>
+                      <tr>
+                        <td>
+                          <%= patient.name %>
+                        </td>
+                        <td>
+                          <%= patient.phone %>
+                        </td>
+                        <td>
+                          <%= patient.email=="" ? "___" : patient.email %>
+                        </td>
+                        <td>
+                          <%= patient.result %>
+                        </td>
+                      </tr>
+                      <% } %>
+                        <%})%>
+                          <%}%>
+                          
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <script src="/js/patientsData.js"></script>
+  </body>
+
+</html>

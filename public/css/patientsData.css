@@ -1,0 +1,44 @@
+.patientsData {
+    padding: 50px 40px;
+}
+
+.table {
+    color: white;
+    margin-top: 50px;
+}
+
+#dvContents {
+    width: 1200px;
+    text-align: left;
+}
+
+ .container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.search {
+    position: relative;
+    transition: 0.5s ease;
+    display: flex;
+
+}
+
+.print {
+    margin-right: 20px;
+    width: 100px;
+    background-color: var(--button2);
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+}
+
+.print i {
+    color: black;
+}
+
+.print:hover {
+    background-color: #db4c5a;
+}

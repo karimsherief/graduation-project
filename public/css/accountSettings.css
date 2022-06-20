@@ -1,0 +1,31 @@
+.accountSettings {
+    padding: 50px 0;
+}
+
+.accountSettings h2 {
+    margin: 50px 0;
+    color: white;
+}
+
+.accountSettings h2:nth-child(4) {
+    display: inline;
+}
+
+.accountSettings .container a {
+    margin-left: 30px;
+    background-color: var(--button2);
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+}
+
+.accountSettings .container a:hover {
+    background-color: #db4c5a;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,68 @@
+:root {
+    --mainColor: #353535;
+    --secondaryColor: #ff96a7;
+    --button1: #0d6efd;
+    --button2: #dc3545;
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--mainColor);
+}
+
+input:not([type="checkbox"]) {
+    border-radius: 50px;
+    border: none;
+    padding: 12px;
+    color: var(--mainColor);
+}
+
+input:focus {
+    outline: none;
+}
+
+i {
+    color: var(--mainColor);
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+
+input+i {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+
+.logo {
+    width: 100px;
+    height: 120px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+section {
+    transition: 0.3s ease;
+}
+
+

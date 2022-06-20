@@ -1,0 +1,98 @@
+
+.GUI {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.info {
+    width: 100%;
+}
+
+.info h1 {
+    font-family: "Sansita Swashed", "poppins", sans-serif;
+    font-size: 30px;
+    white-space: nowrap;
+    color: white;
+}
+
+
+.card-group {
+    display: flex;
+    height: 320px;
+}
+
+.card-group .card {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    height: 320px;
+
+}
+
+.card-group img {
+    height: 80%;
+}
+
+.btns {
+    display: flex;
+    gap: 45px;
+    white-space: nowrap;
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+button {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0b54c3;
+}
+
+button:first-child {
+    background-color: #ff96a7;
+}
+
+button:last-child {
+    background-color: #cc3333;
+}
+
+button:last-child:hover {
+    background-color: #db4c5a;
+}
+
+button:first-child:hover {
+    background-color: #ed718b;
+}
+
+table {
+    margin: 20px 0;
+}
+
+table thead,
+table tbody{
+    color: white;
+    font-size: 20px;
+
+}
+
+table tbody i {
+    color: #62E3A5;
+    font-size: 30px;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs')%>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+      <section class="accountSettings">
+        <div class="container">
+          <h2>Name: <%= doctor.name %>
+          </h2>
+          <h2>E-mail: <%= doctor.email %>
+          </h2>
+          <h2>National ID: <%= doctor.natId %>
+          </h2>
+          <div class="wrap">
+            <h2>Password:</h2>
+            <a href="changepassword">Change password</a>
+          </div>
+        </div>
+      </section>
+  </body>
+
+</html>

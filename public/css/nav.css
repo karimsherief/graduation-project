@@ -1,0 +1,115 @@
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+
+header .container>div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header .title {
+    font-family: "Sansita Swashed", "poppins", sans-serif;
+    font-size: 50px;
+}
+
+header .menu {
+    position: relative;
+}
+
+header .normalList {
+    list-style: none;
+    font-size: 20px;
+}
+
+header .normalList li {
+    display: inline;
+    margin: 10px;
+}
+
+header .active a {
+    color: var(--secondaryColor);
+    border-bottom: 5px solid var(--secondaryColor);
+    padding-bottom: 20px;
+}
+
+header .normalList li:hover a {
+    color: var(--secondaryColor);
+}
+
+header .icons {
+    width: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    display: none;
+}
+
+header .icons span {
+    margin-bottom: 5px;
+    height: 1.8px;
+    background-color: white;
+    width: 100%;
+}
+
+header .icons span:last-child {
+    height: 2.5px;
+}
+
+header .icons span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s ease;
+}
+
+header .menu ul {
+    position: absolute;
+    list-style: none;
+    background-color: var(--button2);
+    right: 0;
+    top: calc(100% + 15px);
+    min-width: 200px;
+    display: none;
+    z-index: 999;
+    padding: 0;
+}
+
+header .menu ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--button2) transparent;
+    position: absolute;
+    right: 2px;
+    top: -20px;
+}
+
+header .menu ul li {
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+header .menu ul li:hover {
+    padding-left: 25px;
+}
+
+header .menu ul li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+header .menu:hover ul {
+    display: block;
+}
+
+header .menu:hover span:nth-child(2) {
+    width: 100%;
+}
+
+a:hover {
+    color: white;
+}
