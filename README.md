@@ -1,3 +1,3 @@
 # graduation-project
 
-[Preview site](graduation-breast-cancer.herokuapp.com/)
+[Preview site](https://graduation-breast-cancer.herokuapp.com/)
